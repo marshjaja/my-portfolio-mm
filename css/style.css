@@ -68,13 +68,23 @@ body {
 	flex-shrink: 0;
 } */
 
-/* NAVBAR STYLES */
+/* ======= PAGE BACKGROUND STYLES ======= */
+.background {
+	background-color: #b41bd65e;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	position: fixed;
+	clip-path: polygon(100% 0, 19% 100%, 100% 100%);
+}
+/* ======= PAGE BACKGROUND STYLES ======= */
+
+/* ======= NAVBAR STYLES ======= */
 .custom-nav {
 }
 
 .custom-nav a {
 	font-size: 14px;
-
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
@@ -109,6 +119,7 @@ nav.custom-nav ul li a:hover:after {
 .nav-logo {
 	font-family: Stick No Bills;
 	font-size: 4rem;
+	letter-spacing: 6px;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -116,6 +127,57 @@ nav.custom-nav ul li a:hover:after {
 }
 
 .logo-span {
+	display: inline-block;
+	margin-right: 2px;
+	transform: rotateY(360deg);
 	color: rgba(7, 7, 7, 0.226);
 }
-/* NAVBAR STYLES */
+/* ======= NAVBAR STYLES ======= */
+
+/* ======= HERO STYLES ======= */
+/* #hero {
+	background-image: url(../images/website-bg-2.jpg);
+	width: 1919px;
+	height: 709px;
+	flex-shrink: 0;
+} */
+
+.thumbnail {
+	position: relative;
+	overflow: hidden;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.thumbnail:hover {
+	opacity: 0.9;
+	transform: scale(0.9);
+}
+
+/* ======= HERO STYLES ======= */
+
+/* ======= GENERAL PAGE STYLES STYLES ======= */
+
+.gap {
+	padding: 20px 0px;
+}
+/* ======= GENERAL PAGE STYLES STYLES ======= */
+
+/* ======= PROJECT COLUMN  STYLES ======= */
+
+/* .project-text {
+	padding: 60px 0 0 40px;
+} */
+
+.wrap-container {
+	display: flex;
+}
+@media (max-width: 767px) {
+	.wrap-container {
+		flex-direction: column;
+		flex-direction: column-reverse;
+	}
+	.small-container-text {
+		margin-top: 50px;
+	}
+}
+/* ======= PROJECT COLUMN  STYLES ======= */
