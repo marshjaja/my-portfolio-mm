@@ -115,7 +115,11 @@ nav.custom-nav ul li a:hover {
 nav.custom-nav ul li a:hover:after {
 	width: 100%;
 }
-
+@media (max-width: 767px) {
+	nav.custom-nav ul li a:hover:after {
+		display: none;
+	}
+}
 .nav-logo {
 	font-family: Stick No Bills;
 	font-size: 4rem;
@@ -127,18 +131,27 @@ nav.custom-nav ul li a:hover:after {
 }
 
 .logo-span {
-	display: inline-block;
-	margin-right: 2px;
-	transform: rotateY(360deg);
-	color: rgba(7, 7, 7, 0.226);
+	color: grey;
 }
 /* ======= NAVBAR STYLES ======= */
 
+/* ======= HEADER STYLES ======= */
+
+#page-overlay {
+	background-color: #4696e5;
+	color: #d1e5f9;
+	padding: 4.5em 0 2.5em 0;
+
+	height: 100vh;
+	min-height: 35em;
+}
+
+/* ======= HEADER STYLES ======= */
+
 /* ======= HERO STYLES ======= */
 /* #hero {
-	background-image: url(../images/website-bg-2.jpg);
-	width: 1919px;
-	height: 709px;
+	background-color: red;
+	height: 750px;
 	flex-shrink: 0;
 } */
 
@@ -180,4 +193,17 @@ nav.custom-nav ul li a:hover:after {
 		margin-top: 50px;
 	}
 }
+
+/* © */
 /* ======= PROJECT COLUMN  STYLES ======= */
+/* ======= FOOTER STYLES ======= */
+
+footer a {
+	color: rgba(89, 89, 89, 0.992);
+}
+
+footer ul li a:hover {
+	color: rgba(158, 156, 156, 0.76);
+}
+
+/* ======= FOOTER STYLES ======= */

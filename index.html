@@ -29,8 +29,18 @@
 	</head>
 
 	<body>
-		<div class="background"></div>
-		<header>
+		<div class="col-md-4"><h1></h1></div>
+		<div class="col-md-12 text-center p-5 d-flex flex-column justify-content-center align-items-center" id="page-overlay">
+			<h1>HELLO </h1>
+			<h1>I am Marcia Mijnhijmer </h1>
+
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis voluptatibus enim nostrum nulla, doloremque, velit iusto dicta eius quisquam molestiae alias pariatur deserunt voluptatem magnam possimus voluptates harum cupiditate, iste tenetur veniam. Vero cum enim cumque adipisci error esse, veniam nemo, unde fuga officiis expedita ipsum vel, molestiae pariatur ipsam.</p>
+		<a href="#about"><i class="display-6 bi bi-chevron-double-down"></i></a>
+		</div>
+		
+		
+			<!-- HEADER SECTION -->
+		<header >
 			<nav class="navbar navbar-expand-lg custom-nav">
 				<div class="container-fluid">
 					<div class="col-md-4 d-flex align-items-center">
@@ -54,13 +64,13 @@
 					<div class="container collapse navbar-collapse navBar" id="navbarNav">
 						<ul class="navbar-nav ms-auto">
 							<li class="nav-item">
-								<a class="nav-link px-4" href="#about">Home</a>
+								<a class="nav-link px-4" href="#hero">Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link px-4" href="#work">About</a>
+								<a class="nav-link px-4" href="#about">About</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link px-4" href="#skills">Projects</a>
+								<a class="nav-link px-4" href="#projects">Projects</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link px-4" href="#contact">Contact</a>
@@ -70,22 +80,28 @@
 				</div>
 			</nav>
 		</header>
-
-		<!-- hero banner -->
-
+		<main class="page-wrapper">
+		<!-- HERO BANNER -->
 		<section class="hero-banner" id="hero">
-			<div>
+		
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-md-4"><h1></h1></div>
-						<div class="col-md-8">
-							<p></p>
+						<div class="col-md-8 text-center justify-content-center align-items-center p-5">
 						</div>
 					</div>
 				</div>
-			</div>
+		
 		</section>
-		<section class="hero-banner" id="hero">
+		<!-- ABOUT ME SECTION -->
+		<section class="page-section" id="about">
+			<h2>About Me</h2>
+		</section>
+
+		<!-- PORTFOLIO SECTION -->
+
+		
+		<section class="hero-banner" id="projects">
 			<div>
 				<div class="container container-1">
 					<div class="row gy-5 px-xs-1 px-lg-5 gap">
@@ -146,23 +162,42 @@
 				</div>
 			</div>
 		</section>
-
-		<main class="page-wrapper">
-			<!-- about me -->
-			<section class="page-section" id="about">
-				<h2>About Me</h2>
-			</section>
-
-			<!-- portfolio container -->
-			<section class="page-section" id="work">
-				<h2>Work</h2>
-			</section>
-
-			<!-- contact -->
-			<section class="page-section contact" id="contact">
-				<h2>Contact Me</h2>
-			</section>
+			<!-- CONTACT SECTION -->
 		</main>
+		<section class="page-section contact" id="contact"></section>
+		<footer
+			class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top m-lg-5"
+		>
+			<p class="col-md-4 text-dark">© 2023 Marcia Mijnhijmer</p>
+
+			<a
+				href="/"
+				class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+			>
+				<h1 class="nav-logo">M<span class="logo-span">M</span></h1>
+			</a>
+
+			<ul class="nav col-md-4 justify-content-end">
+				<li class="nav-item">
+					<a href="#" class="display-6 px-2"><i class="bi bi-linkedin"></i></a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="display-6 px-2"><i class="bi bi-github"></i></a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="display-6 px-2"><i class="bi bi-facebook"></i></a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="display-6 px-2"><i class="bi bi-instagram"></i></a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="display-6 px-2"
+						><i class="bi bi-envelope-at"></i
+					></a>
+				</li>
+			</ul>
+		</footer>
+	</section>
 		<script
 			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
 			integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
