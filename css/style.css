@@ -138,14 +138,43 @@ nav.custom-nav ul li a:hover:after {
 /* ======= HEADER STYLES ======= */
 
 #page-overlay {
-	background-color: #4696e5;
+	background-color: #b222d3;
 	color: #d1e5f9;
 	padding: 4.5em 0 2.5em 0;
 
-	height: 100vh;
+	height: 110vh;
+	/* height: 110vh; */
 	min-height: 35em;
 }
 
+#page-overlay h1 {
+	/* color: #bdb7be; */
+	/* color: #302a31; */
+	color: #49444a;
+}
+#page-overlay p {
+	color: #49444a;
+}
+
+#overlay-header {
+	position: relative;
+
+	animation: mymove 2s ease-in forwards;
+}
+#overlay-header h1 {
+	font-size: 15rem;
+}
+
+@keyframes mymove {
+	from {
+		top: -100px;
+		opacity: 1;
+	}
+	to {
+		top: 50px;
+		opacity: 0;
+	}
+}
 /* ======= HEADER STYLES ======= */
 
 /* ======= HERO STYLES ======= */
@@ -176,10 +205,6 @@ nav.custom-nav ul li a:hover:after {
 /* ======= GENERAL PAGE STYLES STYLES ======= */
 
 /* ======= PROJECT COLUMN  STYLES ======= */
-
-/* .project-text {
-	padding: 60px 0 0 40px;
-} */
 
 .wrap-container {
 	display: flex;
